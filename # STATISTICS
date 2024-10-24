@@ -1,0 +1,26 @@
+# measure of Dispersion
+
+# Population Variance
+Population = [5, 10,15,220,25,300,35,40,45]
+print(Population)
+pop_mean= sum(Population)/len(Population)
+
+sq_pop_deviation = [(i-pop_mean)**2 for i in Population]
+
+pop_variance = sum(sq_pop_deviation)/len(Population)
+print(pop_variance)
+
+#Statistics Sample variance
+
+sample = (5,25,5)
+s_mean = sum(sample)/len(sample)
+sq_s_deviation = [(i-s_mean)**2 for i in sample]
+s_variance = sum(sq_s_deviation)/len(sample)-1
+print('Sample variance : {}'. format(round(s_variance,2)))
+
+#Standard Deviation
+import math
+pop_variance
+std_dev = math.sqrt(pop_variance)
+print('Standard Deviation : {}'. format(round(std_dev,2)))
+print(pop_mean)

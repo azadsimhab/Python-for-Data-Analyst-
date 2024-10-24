@@ -1,0 +1,12 @@
+# measure of Dispersion
+
+# Population Variance
+Population = [5, 10,15,220,25,300,35,40,45]
+print(Population)
+pop_mean= sum(Population)/len(Population)
+
+sq_pop_deviation = [(i-pop_mean)**2 for i in Population]
+
+pop_variance = sum(sq_pop_deviation)/len(Population)
+print(pop_variance)
+
