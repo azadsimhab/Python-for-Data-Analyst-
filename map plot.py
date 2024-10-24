@@ -11,11 +11,15 @@ data = pd.DataFrame({
 
 print(data)
 
-for 1 in range(0,len(data)):
+for i in range(0,len(data)):
     folium.marker(
         location=[data.iloc[i]['lat'], data.iloc[i]['lon']],
         popup=data.iloc[i]['name'],
     ).add_to(m)
+    
+    
+    #make a empty map 
+    =folium.map(location[20,0], tiles="OpenStreetMap", zoom_start=2)
     
     ##show the map again
     
